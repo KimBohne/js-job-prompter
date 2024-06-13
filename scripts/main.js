@@ -72,3 +72,6 @@ const departments = {
 }
 
 console.log(departments);
+console.log("de afdeling sales heeft[departments]medewerkers")
+console.log(departments.sales.numberOfEmployees)
+console.log()
