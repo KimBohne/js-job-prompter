@@ -72,8 +72,21 @@ const departments = {
 }
 
 console.log(departments);
-console.log("de afdeling sales heeft " + departments.marketing.description);
+// ***********opdracht 1a***********
+
 console.log(departments.sales.numberOfEmployees)
-console.log()
-const userInput = prompt('Hoi! Hoe heet je?');
+// ***********opdracht 1b***********
+console.log("de afdeling sales heeft " + departments.marketing.description);
+// ***********opdracht 1c***********
+console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
+// const userInput = prompt('Hoi! Hoe heet je?');
+// console.log(userInput);
+// ******opdracht 1d***********
+
+console.log("Sales is een uitdagende afdeling om te werken als verkoopmanager " + departments.sales.description);
+// ******opdracht 2a***********
+
+const listDepartments = ["marketing", "sales", "customer-service"];
+const departmentOptions = listDepartments.join(", ");
+const userInput = prompt("Over welke afdeling wil je informatie? Kies uit: " + departmentOptions);
 console.log(userInput);
