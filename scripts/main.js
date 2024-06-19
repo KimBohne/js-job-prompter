@@ -70,23 +70,58 @@ const departments = {
         ],
     }
 }
-
-console.log(departments);
-// ***********opdracht 1a***********
-
-console.log(departments.sales.numberOfEmployees)
-// ***********opdracht 1b***********
-console.log("de afdeling sales heeft " + departments.marketing.description);
+// -----------------------------------------OPDRACHT 1---------------------------------------------------------------------
+// console.log(departments);
+// // ***********opdracht 1a***********
+//
+// console.log(departments.sales.numberOfEmployees)
+// // ***********opdracht 1b***********
+// console.log("de afdeling sales heeft " + departments.marketing.description);
 // ***********opdracht 1c***********
-console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
+// console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
 // const userInput = prompt('Hoi! Hoe heet je?');
 // console.log(userInput);
 // ******opdracht 1d***********
 
-console.log("Sales is een uitdagende afdeling om te werken als verkoopmanager " + departments.sales.description);
+// console.log("Sales is een uitdagende afdeling om te werken als verkoopmanager " + departments.sales.description);
 // ******opdracht 2a***********
 
-const listDepartments = ["marketing", "sales", "customer-service"];
-const departmentOptions = listDepartments.join(", ");
-const userInput = prompt("Over welke afdeling wil je informatie? Kies uit: " + departmentOptions);
-console.log(userInput);
+// --------------------------------------------OPDRACHT 2-----------------------------------------------------------------
+// const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]. ');
+//
+// if (userInput === "marketing") {
+//     console.log("Je koos " + userInput + '. ' + departments.marketing.description);
+// } else if (userInput === "sales") {
+//     console.log("Je koos " + userInput + '. ' + departments.sales.description);
+// } else if (userInput === "customer-service") {
+//     console.log("Je koos " + userInput + '. ' + departments["customer-service"].description);
+// }else {
+//     console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+//
+//
+// -------------------------------------------------------OPDRACHT 3 ------------------------------------------------------
+let userInput = prompt("Voor een getal in tussen 0 en 3:");
+let number = parseInt(userInput,10);
+
+   if (number === 0) {
+       console.log("Je koos " + departments.marketing.jobs[0].title + "Een uitdagende rol!" + departments.marketing.jobs[0].description);
+   } else if (number === 1) {
+       console.log("Je koos " + departments.marketing.jobs[1].title + "Een uitdagende rol!" + departments.marketing.jobs[1].description);
+   } else if (number === 2) {
+       console.log("Je koos " + departments.marketing.jobs[2].title + "Een uitdagende rol!" + departments.marketing.jobs[2].description);
+   } else if (number === 3) {
+       console.log("Je koos " + departments.marketing.jobs[3].title + "Een uitdagende rol!" + departments.marketing.jobs[3].description);
+   } else {
+       console.error("Ongeldige keuze");
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+/
+
+
+
+
+
+
+
