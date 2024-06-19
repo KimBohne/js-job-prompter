@@ -72,6 +72,8 @@ const departments = {
 }
 
 console.log(departments);
-console.log("de afdeling sales heeft[departments]medewerkers")
+console.log("de afdeling sales heeft " + departments.marketing.description);
 console.log(departments.sales.numberOfEmployees)
 console.log()
+const userInput = prompt('Hoi! Hoe heet je?');
+console.log(userInput);
