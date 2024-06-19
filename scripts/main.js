@@ -113,11 +113,12 @@ let number = parseInt(userInput,10);
        console.log("Je koos " + departments.marketing.jobs[3].title + "Een uitdagende rol!" + departments.marketing.jobs[3].description);
    } else {
        console.error("Ongeldige keuze");
+   }
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
-/
+
 
 
 
